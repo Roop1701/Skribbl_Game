@@ -2,7 +2,11 @@ const { instrument } = require("@socket.io/admin-ui");
 
 const io = require("socket.io")(3000, {
   cors: {
-    origin: ["http://localhost:8080", "https://admin.socket.io/#/"],
+    origin: [
+      "http://localhost:8080",
+      "https://admin.socket.io/#/",
+      "http://localhost:8080/script.js",
+    ],
   },
 }); //it takes first arg aas https server and second arg as options
 
