@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas POC</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="canvas-container">
+      <canvas id="drawing-area" height="500" width="500"></canvas>
+      <div class="canvas-container__tools">
+        <div class="tool eraser" onclick="selectEraser()">
+          <img
+            src="https://cdn0.iconfinder.com/data/icons/interface-tools-starter-colored/48/JD-03-512.png"
+            alt="Eraser"
+          />
+        </div>
+        <div class="tool pencil" onclick="selectPencil()">
+          <img
+            src="https://w7.pngwing.com/pngs/720/739/png-transparent-pencil-drawing-tool-computer-icons-pencil.png"
+            alt="Pencil"
+          />
+        </div>
+        <div class="tool clear" onclick="clearCanvas()">Clear All</div>
+      </div>
+    </div>
+  </body>
+</html>
